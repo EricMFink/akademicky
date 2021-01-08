@@ -1,31 +1,34 @@
----
-layout: null
-nav_exclude: true
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Akademický</title>
+    <description></description>
+    <link>https://www.emfink.net/akademicky/</link>
+    <atom:link href="https://www.emfink.net/akademicky/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 07 Jan 2021 21:41:20 -0500</pubDate>
+    <lastBuildDate>Thu, 07 Jan 2021 21:41:20 -0500</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>About this Theme</title>
+        <description>&lt;p&gt;Akademický is a &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; theme for academic sites. It is based on &lt;a href=&quot;https://github.com/alshedivat/al-folio&quot;&gt;alshedivat/al-folio&lt;/a&gt;, and uses elements from &lt;a href=&quot;https://github.com/clayh53/tufte-jekyll&quot;&gt;clayh53/tufte-jekyll&lt;/a&gt; (figures, and side/margin notes in the style of &lt;a href=&quot;https://www.edwardtufte.com/tufte/&quot;&gt;Edward Tufte&lt;/a&gt; and &lt;a href=&quot;https://github.com/andhart/bijou&quot;&gt;andhart/bijou&lt;/a&gt; (table and button styles).&lt;/p&gt;
+
+&lt;h2 id=&quot;demos&quot;&gt;Demos&lt;/h2&gt;
+
+&lt;p&gt;Here are two sites using this theme:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://LuckyJimJD.github.io/ELonLaw/&quot;&gt;Personal site&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://LuckyJimJD.github.io/CivilProcedure/&quot;&gt;Course site&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Aug 2020 09:15:00 -0400</pubDate>
+        <link>https://www.emfink.net/akademicky/articles/About</link>
+        <guid isPermaLink="true">https://www.emfink.net/akademicky/articles/About</guid>
+        
+        
+        <category>post</category>
+        
       </item>
-    {% endfor %}
+    
   </channel>
 </rss>
